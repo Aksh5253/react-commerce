@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import './App.css';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
+import CartPage from './pages/CartPage';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -23,8 +24,12 @@ const router = createBrowserRouter([
     element:  <LoginPage></LoginPage>,
   }, 
   {
-    path: "/Signup",
+    path: "/signup",
     element:  <SignupPage></SignupPage>,
+  },
+  {
+    path: "/cart",
+    element:  <CartPage></CartPage>,
   },
 ]);
 
